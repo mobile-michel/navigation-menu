@@ -1,0 +1,21 @@
+{
+  "name": "1navigation-menu",
+  "version": "1.0.1",
+  "description": "Responsive navigation menu with Eleventy",
+  "main": "eleventy.config.js",
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve",
+    "build": "eleventy",
+    "build-gp": "eleventy --pathprefix 'navigation-menu'"
+  },
+  "keywords": [
+    "eleventy",
+    "11ty",
+    "liquidjs"
+  ],
+  "author": "Michel Maillard",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}

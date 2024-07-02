@@ -1,0 +1,12 @@
+<nav aria-label="Pagination">
+    <p>
+    {%- assign previousPost = collections[navigation] | getPreviousCollectionItem %}
+    {%- assign nextPost = collections[navigation] | getNextCollectionItem %}
+    {%- if nextPost or previousPost %}
+    {%- if previousPost %}Previous: <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a>
+    {%- endif %}
+    {%- if nextPost %}
+    Next: <a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a>
+    {%- endif %}
+    {%- endif %}</p>
+</nav>

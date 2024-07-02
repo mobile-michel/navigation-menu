@@ -1,0 +1,33 @@
+/************/
+/* base.css */
+/************/
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: var(--size);
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    text-align: center ;
+    background-position: center;
+    h1 {
+        font-family: cursive;
+    }
+}
+
+pre {
+    background-color: var(--grey300);
+    font-size: smaller;
+    padding: 20px;
+    border-left: 3px solid var(--primary-color);
+    margin: 20px 0;
+    overflow-x: auto;
+}
+
+footer {
+    text-align: center;
+}

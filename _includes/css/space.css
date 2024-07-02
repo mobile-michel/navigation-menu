@@ -1,0 +1,22 @@
+/*************/
+/* space.css */
+/*************/
+
+aside nav ul {
+    padding-left: 0;
+}
+
+header>*,
+main-container>*,
+footer>* {
+    margin: var(--spacing);
+    padding: 0 var(--spacing);
+}
+
+footer {
+    padding-bottom: var(--spacing);
+}
+
+* {
+    line-height: clamp(1.125rem, 0.924vw + 0.886rem, 1.625rem);
+}

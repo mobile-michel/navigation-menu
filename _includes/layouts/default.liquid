@@ -1,0 +1,24 @@
+---
+layout: layouts/base
+---
+<header>
+    {% include 'navigation/primary' %}
+    <h1>{{ site.name }}</h1>
+</header>
+<main-container>
+    {%- if tags contains 'secondary' %}
+    <aside>
+        {% include 'navigation/secondary' %}
+    </aside>
+    {% endif %}
+    <main aria-labelledby="{{ title | slugify }}">
+        {%- if navigation %}{% include 'navigation/collection' %}{% endif %}
+        <h2 id="{{ title | slugify }}">{{ title }}</h2>
+        {%- if description %}<p>{{ description }}</p>{% endif %}
+        {{ content }}
+    </main>
+</main-container>
+<footer>
+    {%- include 'navigation/footer' %}
+    {%- include 'copyright' %}
+</footer>
